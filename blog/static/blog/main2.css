@@ -84,7 +84,12 @@ a.article-title:hover {
   font-size: 2.5rem;
 }
 
-.featured-image-list{
+.featured-image-list {
   height: 335px;
   width: 600px;
+}
+
+.button1 {
+  background-color: #FFFFF0;
+  color: black;
 }

@@ -29,7 +29,7 @@
             </div>
             <div class="navbar-nav">
               {% if user.is_authenticated %}
-                <p class="nav-item nav-link">Hello again {{ user.username }}</p>
+                <h4><a class="nav-item nav-link">Hello again {{ user.username }}</a></h4>
                 <a href="{% url 'profile' %}">
                   <img class="rounded-circle" src="{{ user.profile.image.url }}" width="50" height="50">
                 </a>
@@ -57,11 +57,11 @@
             {% if user.is_authenticated %}
             <p class='text-muted'>What you feel like doing today {{ user.username }}?
               <ul class="list-group">
-                <a class="btn btn-outline-light" href="{% url 'profile' %}">Your Profile</a>
-                <a class="btn btn-outline-light" href="{% url 'post-create' %}">New Post</a>
-                <a class="btn btn-outline-light" href="{% url 'user-posts' user.username %}">Your Posts</a>
-                <a class="btn btn-outline-light" href="{% url 'blog-about' %}">About</a>
-                <a class="btn btn-outline-light" href="{% url 'logout' %}">Logout</a>
+                <a class="button1" href="{% url 'profile' %}">Your Profile</a>
+                <a class="btn btn-outline-info" href="{% url 'post-create' %}">New Post</a>
+                <a class="btn btn-outline-info" href="{% url 'user-posts' user.username %}">Your Posts</a>
+                <a class="btn btn-outline-info" href="{% url 'blog-about' %}">About</a>
+                <a class="btn btn-outline-info" href="{% url 'logout' %}">Logout</a>
               </ul>
             </p>
             {% else %}
