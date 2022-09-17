@@ -57,18 +57,18 @@
             {% if user.is_authenticated %}
             <p class='text-muted'>What you feel like doing today {{ user.username }}?
               <ul class="list-group">
-                <a class="btn listbtn" href="{% url 'profile' %}">Your Profile</a>
-                <a class="btn listbtn" href="{% url 'post-create' %}">New Post</a>
+                <a class="btn listbtn mb-1" href="{% url 'profile' %}">Your Profile</a>
+                <a class="btn listbtn mb-1" href="{% url 'post-create' %}">New Post</a>
                 <a class="btn listbtn mb-1" href="{% url 'user-posts' user.username %}">Your Posts</a>
-                <a class="btn listbtn" href="{% url 'blog-about' %}">Guide</a>
+                <a class="btn listbtn mb-1" href="{% url 'blog-about' %}">Guide</a>
                 <a class="btn listbtn" href="{% url 'logout' %}">Logout</a>
               </ul>
             </p>
             {% else %}
             <p class='text-muted'>Log In or Create a New Profile!
               <ul class="list-group">
-                <a class="btn listbtn" href="{% url 'login' %}">Login</a>
-                <a class="btn listbtn" href="{% url 'register' %}">Register</a>
+                <a class="btn listbtn mb-1" href="{% url 'login' %}">Login</a>
+                <a class="btn listbtn mb-1" href="{% url 'register' %}">Register</a>
                 <a class="btn listbtn" href="{% url 'blog-test' %}">Showcase</a>
               </ul>
             </p>
