@@ -29,7 +29,7 @@
             </div>
             <div class="navbar-nav">
               {% if user.is_authenticated %}
-                <h4><a class="nav-item nav-link">Hello again {{ user.username }}</a></h4>
+                <h5><a class="nav-item nav-link">Hello again {{ user.username }}</a></h5>
                 <a href="{% url 'profile' %}">
                   <img class="rounded-circle" src="{{ user.profile.image.url }}" width="50" height="50">
                 </a>
@@ -57,7 +57,7 @@
             {% if user.is_authenticated %}
             <p class='text-muted'>What you feel like doing today {{ user.username }}?
               <ul class="list-group">
-                <a class="button1" href="{% url 'profile' %}">Your Profile</a>
+                <a class="btn btn-outline-light color:black" href="{% url 'profile' %}">Your Profile</a>
                 <a class="btn btn-outline-info" href="{% url 'post-create' %}">New Post</a>
                 <a class="btn btn-outline-info" href="{% url 'user-posts' user.username %}">Your Posts</a>
                 <a class="btn btn-outline-info" href="{% url 'blog-about' %}">About</a>
