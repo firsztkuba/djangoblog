@@ -59,7 +59,7 @@
               <ul class="list-group">
                 <a class="btn listbtn" href="{% url 'profile' %}">Your Profile</a>
                 <a class="btn listbtn" href="{% url 'post-create' %}">New Post</a>
-                <a class="btn listbtn" href="{% url 'user-posts' user.username %}">Your Posts</a>
+                <a class="btn listbtn mb-1" href="{% url 'user-posts' user.username %}">Your Posts</a>
                 <a class="btn listbtn" href="{% url 'blog-about' %}">Guide</a>
                 <a class="btn listbtn" href="{% url 'logout' %}">Logout</a>
               </ul>
