@@ -90,10 +90,11 @@ a.article-title:hover {
 }
 
 .listbtn {
+  border: 4px solid;
   border-color: #F08080;
   color: black;
 }
 
 .listbtn:hover {
-  background-color: #white;
+  background-color: #F08080;
   color: black;
