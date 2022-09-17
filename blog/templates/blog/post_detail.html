@@ -1,0 +1,29 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <article class="media content-section">
+        <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
+        <div class="media-body">
+            <div class="article-metadata">
+                <a class="article-title" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
+                <small class="article-title">{{ post.date_posted|date:"d.m.Y  H:i" }}</small>
+            </div>
+            <h2 class="article-title">{{ post.title }}</h2>
+            <p class="article-content">{{ post.content }}</p>
+            {% if post.image %}
+                <div class="ratio ratio-16x9">
+                    <img src="{{ post.image.url }}" class="rounded featured-image-list" alt="{{post.title}}">
+                </div>
+            {% endif %}
+            {% if object.author == user %}
+            <br>
+            <br>
+
+                <div class="form-group">
+                    <a class="btn btn-outline-info" href="{% url 'post-update' object.id %}">Update</a>
+                    <a class="btn btn-outline-danger" href="{% url 'post-delete' object.id %}">Delete</a>
+                </div>
+            {% endif %}
+        </div>
+    </article>
+{% endblock content %}
+
