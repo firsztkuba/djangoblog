@@ -55,7 +55,7 @@
             {% if user.is_authenticated %}
             <p class='text-muted'>What you feel like doing today {{ user.username }}?
               <ul class="list-group">
-                <a class="list-group-item list-group-item-light" href="{% url 'profile' %}">Your Profile</a>
+                <a class="btn btn-outline-info" href="{% url 'profile' %}">Your Profile</a>
                 <a class="list-group-item list-group-item-light" href="{% url 'post-create' %}">New Post</a>
                 <a class="list-group-item list-group-item-light" href="{% url 'user-posts' user.username %}">Your Posts</a>
                 <a class="list-group-item list-group-item-light" href="{% url 'blog-about' %}">About</a>
