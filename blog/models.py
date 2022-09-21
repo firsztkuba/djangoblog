@@ -9,6 +9,7 @@ class Post(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
     image = models.ImageField(blank=True, upload_to='post_pics')
+    # video = models.CharField(blank=True, max_length=100) -> dograc
     date_posted = models.DateTimeField(default=timezone.now)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
