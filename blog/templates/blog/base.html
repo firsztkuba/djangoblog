@@ -51,8 +51,8 @@
           {% endif %}
           {% block content %}{% endblock %}
         </div>
-        <div class="col-sm-4">
-          <div class="content-section">
+        <aside id="sidebar">
+          <div class="content-section fixed">
             <h3>Your Sidebar</h3>
             {% if user.is_authenticated %}
             <p class='text-muted'>What you feel like doing today {{ user.username }}?
@@ -74,7 +74,7 @@
             </p>
             {% endif %}
           </div>
-        </div>
+        </aside>
       </div>
     </main>
 
