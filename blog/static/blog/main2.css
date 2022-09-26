@@ -1,5 +1,6 @@
 body {
-  background: #FAEBD7;
+  background-image: url(../../media/geometric-bg.png);
+  background-attachment: fixed;
   color: #333333;
   margin-top: 5rem;
 }
@@ -13,7 +14,7 @@ ul {
 }
 
 .bg-steel {
-  background-color: #F08080;
+  background-color: #2F4F4F;
 }
 
 .site-header .navbar-nav .nav-link {
@@ -34,6 +35,27 @@ ul {
   border: 2px solid #F08080;
   border-radius: 3px;
   margin-bottom: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  transform: translateX(-400%);
+  transition: transform 0.3s ease;
+}
+
+.comtent-show {
+  transform: translateX(0);
+}
+
+.content-fixed {
+  background: #FFFFF0;
+  padding: 10px 20px;
+  border: 2px solid #F08080;
+  border-radius: 3px;
+  position: fixed;
+  align: right;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .article-title {
@@ -97,5 +119,13 @@ a.article-title:hover {
 .listbtn:hover {
   background-color: #F08080;
   color: #FFFFF0;
+}
+
+#main-footer {
+  background: #2F4F4F;
+  color: #fff;
+  text-align: center;
+  padding:10px;
+  position: bottom;
 }
 
