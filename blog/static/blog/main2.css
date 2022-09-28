@@ -1,5 +1,5 @@
 body {
-  background-image: url(s3://djangoblogkuby-files/geometric-bg.png);
+  background-image: url("s3://djangoblogkuby-files/geometric-bg.png");
   background-attachment: fixed;
   color: #333333;
   margin-top: 5rem;
