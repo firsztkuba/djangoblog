@@ -128,5 +128,6 @@ a.article-title:hover {
   padding:10px;
   position: fixed;
   bottom: 0px;
+  width: 100%;
 }
 
