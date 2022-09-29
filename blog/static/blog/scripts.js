@@ -10,9 +10,9 @@ function checkBoxes() {
         const boxTop = box.getBoundingClientRect().top;
 
         if (boxTop < triggerBottom) {
-            box.classList.add("comtent-show")
+            box.classList.add("content-show")
         } else {
-            box.classList.remove("comtent-show")
+            box.classList.remove("content-show")
         }
     })
 }
