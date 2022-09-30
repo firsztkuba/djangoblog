@@ -11,7 +11,9 @@
             <p class="article-content">{{ post.content }}</p>
             {% if post.image %}
             <div>
-                <img src="{{ post.image.url }}" class="img-post">
+                <a href="{{ post.image.url }}" target="_blank">
+                    <img src="{{ post.image.url }}" class="img-post">
+                </a>
             </div>
             {% endif %}
             {% if object.author == user %}
